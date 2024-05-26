@@ -1,0 +1,206 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Item list</h1>
+    <a href="order.html"><button onclick="goToTodoPage()">Order Now</button></a>
+  </header>
+
+  <div id="todoApp">
+    <h2>Your Order</h2>
+    <ul id="todoList"></ul>
+  </div>
+
+<div id="customerPage">
+  <ul id="todoList"></ul>
+</div>
+
+
+
+  <script src="appcus1.js"></script>
+</body>
+</html>   -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Page</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIu-sPFx_JEr7PUFWqSLr10Wdn01TsRHfJfhezA0UD4Qk9Z_k&s);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: scroll;
+  filter: none;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#customerPage {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+}
+
+.item-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-container img {
+  max-width: 100px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  #customerPage {
+    padding: 15px;
+  }
+
+  .item-container img {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  #customerPage {
+    padding: 10px;
+  }
+
+  .item-container img {
+    max-width: 60px;
+  }
+}
+
+
+</style>
+
+
+</head>
+<body>
+  <header>
+    <h1>Item List</h1>
+    <a href="order.html"><button>Order Now</button></a>
+  </header>
+
+  <div id="customerPage">
+    <ul id="itemList"></ul>
+  </div>
+
+  <!-- <script src="appcus.js"></script> -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  displayItems();
+});
+
+function displayItems() {
+  const itemList = document.getElementById('itemList');
+  itemList.innerHTML = '';
+
+  const items = JSON.parse(localStorage.getItem('items')) || [];
+
+  items.forEach((item, index) => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <div class="item-container">
+        <img src="${item.image}" alt="${item.name}">
+        <div class="item-details">
+          <span>${item.restaurant}: ${item.name} - ${item.description} - $${item.price.toFixed(2)}</span>
+          
+        </div>
+      </div>
+    `;
+    itemList.appendChild(li);
+  });
+}
+
+function orderItem(index) {
+  // Logic to handle ordering of the selected item
+}
+
+
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

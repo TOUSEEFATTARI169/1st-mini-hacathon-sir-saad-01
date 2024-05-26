@@ -1,0 +1,317 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header>
+    <h1>Admin Panel</h1>
+    <a href="index.cus.html"><button onclick="goToTodoPage()">Go to Todo Page</button></a>
+  </header>
+  <div id="todoApp">
+    <select id="restaurantSelect">
+      <option value="1">Restaurant 1</option>
+      <option value="2">Restaurant 2</option>
+    </select>
+    <input type="text" id="itemName" placeholder="Item Name">
+    <label for="itemImage"><i class="fas fa-image"></i> Add Picture</label>
+    <input type="file" id="itemImage" accept="image/*">
+    <input type="number" id="itemPrice" placeholder="Item Price">
+    <input type="text" id="itemDescription" placeholder="Item Description">
+    <button onclick="addItem()">Add Item</button>
+
+    <div id="itemList" class="item-list"></div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="app.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header>
+    <h1>Admin Panel</h1>
+    <a href="index.cus.html"><button>Go to Todo Page</button></a>
+  </header>
+  <div id="todoApp">
+    <input type="text" id="itemName" placeholder="Item Name">
+    <label for="itemImage"><i class="fas fa-image"></i> Add Picture</label>
+    <input type="file" id="itemImage" accept="image/*">
+    <input type="number" id="itemPrice" placeholder="Item Price">
+    <input type="text" id="itemDescription" placeholder="Item Description">
+    <button onclick="addItem()">Add Item</button>
+
+    <div id="itemList" class="item-list"></div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="app.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header>
+    <h1>Admin Panel</h1>
+    <a href="index.cus.html"><button>Go to view Page</button></a>
+  </header>
+  <div id="todoApp">
+    <input type="text" id="itemName" placeholder="Item Name">
+    <label for="itemImage"><i class="fas fa-image"></i> Add Picture</label>
+    <input type="file" id="itemImage" accept="image/*">
+    <input type="number" id="itemPrice" placeholder="Item Price">
+    <input type="text" id="itemDescription" placeholder="Item Description">
+    <button onclick="addItem()">Add Item</button>
+
+    <div id="itemList" class="item-list"></div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="app.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIu-sPFx_JEr7PUFWqSLr10Wdn01TsRHfJfhezA0UD4Qk9Z_k&s);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: scroll;
+  filter: none;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#todoApp {
+  max-width: 90%; 
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-container img {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  #todoApp {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  #todoApp {
+    padding: 10px;
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <a href="index.cus.html"><button>Go to Customer Page</button></a>
+  </header>
+  <div id="todoApp">
+    <input type="text" id="restaurantName" placeholder="Restaurant Name">
+    <input type="text" id="itemName" placeholder="Item Name">
+    <label for="itemImage"><i class="fas fa-image"></i> Add Picture</label>
+    <input type="file" id="itemImage" accept="image/*">
+    <input type="number" id="itemPrice" placeholder="Item Price">
+    <input type="text" id="itemDescription" placeholder="Item Description">
+    <button onclick="addItem()">Add Item</button>
+
+    <div id="itemList" class="item-list"></div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- <script src="app.js"></script> -->
+  <script>
+
+let items = JSON.parse(localStorage.getItem('items')) || [];
+
+function addItem() {
+  const restaurantName = document.getElementById('restaurantName').value.trim();
+  const itemName = document.getElementById('itemName').value.trim();
+  const itemDescription = document.getElementById('itemDescription').value.trim();
+  const itemPrice = parseFloat(document.getElementById('itemPrice').value);
+  const imageInput = document.getElementById('itemImage');
+  const imageUrl = URL.createObjectURL(imageInput.files[0]);
+
+  if (restaurantName !== '' && itemName !== '' && itemDescription !== '' && !isNaN(itemPrice) && imageUrl) {
+    const newItem = {
+      restaurant: restaurantName,
+      name: itemName,
+      description: itemDescription,
+      price: itemPrice,
+      image: imageUrl
+    };
+
+    items.push(newItem);
+    saveItems();
+    displayItems();
+    clearInputFields();
+  } else {
+    alert('Please fill in all fields correctly.');
+  }
+}
+
+function displayItems() {
+  const itemList = document.getElementById('itemList');
+  itemList.innerHTML = '';
+
+  items.forEach((item, index) => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <div class="item-container">
+        <img src="${item.image}" alt="${item.name}">
+        <div class="item-details">
+          <span>${item.restaurant}: ${item.name} - ${item.description} - $${item.price.toFixed(2)}</span>
+          <button onclick="editItem(${index})">Edit</button>
+          <button onclick="deleteItem(${index})">Delete</button>
+        </div>
+      </div>
+    `;
+    itemList.appendChild(li);
+  });
+}
+
+function editItem(index) {
+  const newName = prompt('Enter new name for the item:', items[index].name);
+  const newDescription = prompt('Enter new description for the item:', items[index].description);
+  const newPrice = parseFloat(prompt('Enter new price for the item:', items[index].price));
+  
+  if (newName !== null && newDescription !== null && !isNaN(newPrice)) {
+    items[index].name = newName.trim();
+    items[index].description = newDescription.trim();
+    items[index].price = newPrice;
+    saveItems();
+    displayItems();
+  }
+}
+
+function deleteItem(index) {
+  items.splice(index, 1);
+  saveItems();
+  displayItems();
+}
+
+function saveItems() {
+  localStorage.setItem('items', JSON.stringify(items));
+}
+
+function clearInputFields() {
+  document.getElementById('restaurantName').value = '';
+  document.getElementById('itemName').value = '';
+  document.getElementById('itemDescription').value = '';
+  document.getElementById('itemPrice').value = '';
+  document.getElementById('itemImage').value = '';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  displayItems();
+});
+
+  </script>
+</body>
+</html>

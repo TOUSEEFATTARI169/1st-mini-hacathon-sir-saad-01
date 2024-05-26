@@ -1,0 +1,137 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="styleadmin.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/1134159071/photo/empty-cafeteria.webp?b=1&s=170667a&w=0&k=20&c=8qIMVmv3j7UVLIAwCbNH9aIkBID5N4zf7e60R4ZVgII='); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Fixed background */
+}
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-create-account {
+            display: inline-block;
+            padding: 10px 140px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn-create-account:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login with Admin & Start Business</h2>
+        <form onsubmit="signup(event)">
+            <input type="text" id="name" class="input-field" placeholder="Name" required>
+            <input type="text" id="restaurant" class="input-field" placeholder="Restaurant" required>
+            <input type="email" id="email" class="input-field" placeholder="Email" required>
+            <input type="password" id="password" class="input-field" placeholder="Password" required>
+            <button type="submit" id="signupBtn">login</button>
+        </form>
+        <center>OR</center>
+        <a href="indexadmin2.html" class="btn-create-account">Create Account</a>
+    </div>
+
+    <script>
+        // Signup function
+        function signup(event) {
+            event.preventDefault(); // Prevent form from submitting
+            var name = document.getElementById('name').value;
+            var restaurant = document.getElementById('restaurant').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Save the data to local storage
+            localStorage.setItem('userName', name);
+            localStorage.setItem('userRestaurant', restaurant);
+            localStorage.setItem('userEmail', email);
+            localStorage.setItem('userPassword', password);
+
+            // Alert the user and redirect to another page
+            alert('login sucessful.');
+            window.location.href = 'index-sign.html';
+        }
+    </script>
+</body>
+</html>

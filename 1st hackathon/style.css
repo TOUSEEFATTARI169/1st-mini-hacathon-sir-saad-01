@@ -1,0 +1,324 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIu-sPFx_JEr7PUFWqSLr10Wdn01TsRHfJfhezA0UD4Qk9Z_k&s);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: scroll;
+  filter: none;
+}
+
+header {
+  background-color: #18bee7;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#todoApp {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+#todoInput {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #ff6666;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Add these styles to style.css */
+ .todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-number {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #ff6666;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Add these styles to style.css */
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-number {
+  width: 30px;
+  height: 30px;
+  background-color: #8ad3f0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.todo-text {
+  flex: 1;
+} 
+
+
+
+
+
+
+
+
+
+#adminPanel {
+  max-width: 400px; 
+}
+
+#adminPanel input {
+  margin-bottom: 10px;
+  display: block;
+}
+
+#adminPanel #imageInput {
+  margin-bottom: 20px;
+  display: block;
+  width: 100%; 
+}
+
+#adminPanel button {
+  margin-top: 10px; 
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIu-sPFx_JEr7PUFWqSLr10Wdn01TsRHfJfhezA0UD4Qk9Z_k&s);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: scroll;
+  filter: none;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+} */
+
+ #todoApp {
+  max-width: 90%; 
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+}
+
+#todoInput {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #ff6666;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-number {
+  width: 30px;
+  height: 30px;
+  background-color: #8ad3f0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.todo-text {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  #todoInput {
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  #todoInput {
+    width: 50%;
+  }
+
+  #todoApp {
+    padding: 15px;
+  }
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.admin-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.admin-item h3 {
+  margin-top: 0;
+}
+
+.admin-item p {
+  margin-bottom: 10px;
+}
+
+.admin-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .admin-item {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-item {
+    padding: 10px;
+  }
+}  
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
